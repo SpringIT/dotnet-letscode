@@ -1,0 +1,6 @@
+{
+    "baseUrl": "http://localhost:5000/api/v1",
+    "signalRUrl": "http://localhost:5000",
+    "settingsUrl": "/assets/settings.json",
+    "version": "1"
+}

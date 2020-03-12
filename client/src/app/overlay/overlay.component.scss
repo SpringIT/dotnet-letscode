@@ -1,0 +1,21 @@
+:host {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($color: #000000, $amount: 0.8);
+    z-index: 10000;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    mat-icon {
+        font-size: 70vh;
+        height: initial;
+        width: initial;
+    }
+}

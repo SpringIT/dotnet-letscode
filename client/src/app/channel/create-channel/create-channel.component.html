@@ -1,0 +1,8 @@
+<div [formGroup]="form">
+    <mat-form-field controlName="name" appearance="outline" class="w-100">
+        <input matInput placeholder="Name" formControlName="name" (keydown.enter)="onCreate()">
+        <button mat-icon-button matSuffix (click)="onCreate()">
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+    </mat-form-field>
+</div>

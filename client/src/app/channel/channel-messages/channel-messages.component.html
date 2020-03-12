@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span *ngIf="channel !== null">{{channel.name}} - {{channel.id}}</span>
+        <span *ngIf="channel === null">No channel active</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+<ng-container *ngIf="channel !== null">
+    <div class="list-container">
+        <mat-list>
+            <mat-list-item *ngFor="let message of channel.messages">
+                <div>
+                    {{message.value}}
+                </div>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </div>
+
+    <app-message-composer [channel]="channel"></app-message-composer>
+</ng-container>
+
+<ng-container *ngIf="channel == null">
+    <div class="wrapper">
+        <mat-icon>chat_bubble_outline</mat-icon>
+    </div>
+</ng-container>

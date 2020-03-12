@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Channels</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-list>
+    <mat-list-item *ngFor="let channel of channels" (click)="onJoin($event, channel)">
+        <mat-icon matListIcon>chat</mat-icon>
+        <h3 matLine> {{channel.name}} </h3>
+        <p matLine>
+            <span> number of messages - {{channel.messageCount}} </span>
+            <button mat-icon-button (click)="onDelete($event,channel)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </p>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
+
+<app-create-channel class="w-100"></app-create-channel>

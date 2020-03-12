@@ -1,0 +1,9 @@
+<div [formGroup]="form">
+    <mat-form-field appearance="outline" class="w-100" controlName="message">
+        <mat-icon matPrefix>chat_bubble_outline</mat-icon>
+        <input matInput placeholder="Message" formControlName="message" (keydown.enter)="onSend($event)">
+        <button mat-icon-button matSuffix (click)="onSend($event)">
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+    </mat-form-field>
+</div>
