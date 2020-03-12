@@ -1,4 +1,4 @@
-# dotcore-letscode
+# learning .net core 
 
 Welcome to the dotnet-letscode repository
 
@@ -18,7 +18,7 @@ Learning asp.net core
 2. Open Workspace /client
 3. Open Terminal > New Terminal
 4. In terminal window run command `npm install` and wait until it completes
-5. In terminal window run ng serve -o
+5. In terminal window run `ng serve -o`
 
 
 ## Open Visual Studio
