@@ -15,9 +15,9 @@ Learning asp.net core
 ## Run UI
 
 1. Open VS Code
-2. Open Workspace /client
+2. Open Workspace in folder /client
 3. Open Terminal > New Terminal
-4. In terminal window run command `npm install` and wait until it completes
+4. In terminal window run command `npm install` and wait until it complete
 5. In terminal window run `ng serve -o`
 
 
