@@ -17,8 +17,8 @@ Learning asp.net core
 1. Open VS Code
 2. Open Workspace in folder /client
 3. Open Terminal > New Terminal
-4. In terminal window run command `npm install` and wait until it complete
-5. In terminal window run `ng serve -o`
+4. In terminal window run command `npm install` and wait until it the command completes
+5. In terminal window run `ng serve -o`. This will compile the angular app and open your browser
 
 
 ## Open Visual Studio
